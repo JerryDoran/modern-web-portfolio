@@ -1,11 +1,15 @@
 // Wide Screen sizes
 @include mediaXl {
-
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // Desktops and Laptop Screen sizes
 @include mediaLg {
-
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Tablets and small laptop Screen sizes
@@ -57,11 +61,19 @@
 
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // Smart phones Screen sizes
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
