@@ -2,6 +2,8 @@
 @import 'menu';
 
 * {
+  // Prevents any padding to be added onto the width of an element.
+  // Contains it within the box model of the element
   box-sizing: border-box;
 }
 
@@ -16,12 +18,13 @@ body {
 
 }
 
-// Headings
+// HEADINGS
 
 h1,h2,h3 {
   margin: 0;
   font-weight: 400;
 
+  // THE & IS THE SAME AS PUTTING H1/H2/H3 HEADING TAG IN FRONT OF THE CLASS NAME
   &.lg-heading {
     font-size: 6rem;
   }
@@ -39,7 +42,9 @@ a {
 }
 
 header {
+  // NAVIGATION MENU WILL ALWAYS STAY AT THE TOP AND NOT SCROLL WITH PAGE
   position: fixed;
+
   z-index: 2;
   width: 100%
 }
@@ -65,7 +70,7 @@ main {
         // CSS Transition
         // transition: all 1.5s ease-out;
 
-        // This is a mixin defined at the top of this file.
+        // This is a mixin defined in the config.scss file.
         @include easeOut();
       }
     }
