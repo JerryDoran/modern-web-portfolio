@@ -45,9 +45,12 @@
   top: 0;
   width: 100%;
   // opacity: .9;
+
+  // Hide the nav menu section
   visibility: hidden;
 
   &.show {
+    // This will display the menu section
     visibility: visible;
   }
 
@@ -68,6 +71,8 @@
     background: darken($primary-color, 5);
     // background: rgba(darken($primary-color, 5), 0.9);
     list-style: none;
+
+    // The -100% is pushing the nav section all the way up and you cannot see it
     transform: translate3d(0, -100%, 0);
     @include easeOut;
 
@@ -80,6 +85,8 @@
   // Branding side
   &-branding {
     background: $primary-color;
+
+    // The 100% value pushes the branding section all the way to the bottom so you cannot see it.
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -94,11 +101,12 @@
       background: url("../images/portrait.png");
       border-radius: 50%;
       border: solid 3px $secondary-color;
-
     }
   }
 
   .nav-item {
+
+    // Moving each item off the screen by moving them to the right by 600px.
     transform: translate3d(600px, 0, 0);
     @include easeOut;
 
