@@ -56,6 +56,8 @@ header {
 main {
   padding: 4rem;
   // height: 100%;
+
+  // This line  will create a sticky footer
   min-height: calc(100vh - 60px);
 
   .icons {
@@ -87,6 +89,7 @@ main {
 }
 
 .about-info {
+  // USE CSS GRID LAYOUT
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
@@ -95,6 +98,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
 }
 
+// DEFINE THE GRID AREAS THAT ARE NAMED ABOVE
 .bio-image {
   grid-area: bioimage;
   margin: auto;

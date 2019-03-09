@@ -105,7 +105,6 @@
   }
 
   .nav-item {
-
     // Moving each item off the screen by moving them to the right by 600px.
     transform: translate3d(600px, 0, 0);
     @include easeOut;
