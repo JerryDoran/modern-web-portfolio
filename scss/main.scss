@@ -129,13 +129,14 @@ main {
   border-bottom: $secondary-color 5px solid;
 }
 
-// Work-Projects
+// WORK-PROJECTS
 .projects {
   display: grid;
-  grid-gap: .7rem;
+  grid-gap: .8rem;
   grid-template-columns: repeat(3, 1fr);
 
   img {
+    // Sets the images to 100% of its container element...reduces the size
     width: 100%;
     border: 3px #fff solid;
 
@@ -173,7 +174,7 @@ main {
   }
 }
 
-// Button Styles
+// BUTTON STYLES
 .btn {
   display: block;
   padding: .5rem 1rem;
@@ -186,12 +187,14 @@ main {
 }
 
 .btn-dark {
+  // this line is taking all of the .btn styles and extending them to this class
   @extend .btn;
   background: darken($primary-color, 50);
   color: #fff;
 }
 
 .btn-light {
+  // this line is taking all of the .btn styles and extending them to this class
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #333;
