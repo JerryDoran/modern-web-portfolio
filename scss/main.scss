@@ -96,6 +96,10 @@ main {
     "bioimage bio bio"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
+
+  // .titles {
+  //   text-align: center;
+  // }
 }
 
 // DEFINE THE GRID AREAS THAT ARE NAMED ABOVE
@@ -104,6 +108,8 @@ main {
   margin: auto;
   border-radius: 50%;
   border: $secondary-color 3px solid;
+  width: 200px;
+  height: 250px;
 }
 
 .bio {
@@ -113,6 +119,7 @@ main {
 
 .job-1 {
   grid-area: job1;
+
 }
 
 .job-2 {
@@ -121,12 +128,32 @@ main {
 
 .job-3 {
   grid-area: job3;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  h5 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    padding-left: 1rem;
+  }
+
+  h6 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 1rem;
+    padding-left: 1rem;
+  }
 }
 
 .job {
   background: lighten($primary-color, 5);
   padding: .5rem;
   border-bottom: $secondary-color 5px solid;
+
+  ul {
+    list-style: none;
+  }
 }
 
 // WORK-PROJECTS
@@ -148,7 +175,7 @@ main {
   }
 }
 
-// Contact Page
+// CONTACT PAGE
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -167,6 +194,7 @@ main {
       padding: .5rem 1.5rem;
       background: $secondary-color;
       color: setTextColor($secondary-color);
+      cursor: pointer;
       span {
         color: setTextColor($secondary-color);
       }
